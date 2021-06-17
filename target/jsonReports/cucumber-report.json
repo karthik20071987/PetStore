@@ -1,0 +1,212 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-17T13:33:23.466Z",
+        "line": 5,
+        "name": "User Adds and updates the pet status",
+        "description": "",
+        "id": "this-feature-is-to-perform-pets-management-like-update--add--delete.;user-adds-and-updates-the-pet-status",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4877000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User adds a pet",
+            "match": {
+              "location": "stepDefinitions.petStoreSteps.user_adds_a_pet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Pet is added to the store",
+            "match": {
+              "location": "stepDefinitions.petStoreSteps.pet_is_added_to_the_store()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 662000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User updates the status to \"sold\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sold\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDefinitions.petStoreSteps.user_updates_the_status_to(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 967000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Status is updated to \"sold\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sold\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinitions.petStoreSteps.status_is_updated_to(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Api"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-17T13:33:30.057Z",
+        "line": 12,
+        "name": "User Adds and deletes a pet",
+        "description": "",
+        "id": "this-feature-is-to-perform-pets-management-like-update--add--delete.;user-adds-and-deletes-a-pet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 733000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User adds a pet",
+            "match": {
+              "location": "stepDefinitions.petStoreSteps.user_adds_a_pet()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Pet is added to the store",
+            "match": {
+              "location": "stepDefinitions.petStoreSteps.pet_is_added_to_the_store()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 992000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User deletes the pet",
+            "match": {
+              "location": "stepDefinitions.petStoreSteps.user_deletes_the_pet()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepDefinitions.petStoreSteps.the_pet_is_deleted(petStoreSteps.java:53)\r\n\tat ✽.The pet is deleted(file:///C:/Users/Karthik/LatestEclipseWorkspace/petStore/src/test/resources/features/managePets.feature:16)\r\n",
+              "duration": 3000000,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "The pet is deleted",
+            "match": {
+              "location": "stepDefinitions.petStoreSteps.the_pet_is_deleted()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Api"
+          }
+        ]
+      }
+    ],
+    "name": "This feature is to perform pets management like update, add, delete.",
+    "description": "",
+    "id": "this-feature-is-to-perform-pets-management-like-update--add--delete.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/managePets.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-17T13:33:31.805Z",
+        "line": 4,
+        "name": "Get pets by availability status from the petstore",
+        "description": "",
+        "id": "this-feature-is-to-validate-the-basic-api-calls-from-petstore;get-pets-by-availability-status-from-the-petstore",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1216000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User search for \"available\" pets",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"available\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinitions.petStoreSteps.i_search_for_pets(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Pets are displayed",
+            "match": {
+              "location": "stepDefinitions.petStoreSteps.pets_are_shown()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          },
+          {
+            "name": "@Api"
+          }
+        ]
+      }
+    ],
+    "name": "This feature is to validate the basic API calls from petstore",
+    "description": "",
+    "id": "this-feature-is-to-validate-the-basic-api-calls-from-petstore",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/petStore.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="11.499">
+    <testcase classname="This feature is to perform pets management like update, add, delete." name="User Adds and updates the pet status" time="7.155">
+        <system-out><![CDATA[Given User adds a pet.......................................................passed
+Then Pet is added to the store..............................................passed
+When User updates the status to "sold"......................................passed
+Then Status is updated to "sold"............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="This feature is to perform pets management like update, add, delete." name="User Adds and deletes a pet" time="2.175">
+        <system-out><![CDATA[Given User adds a pet.......................................................passed
+Then Pet is added to the store..............................................passed
+When User deletes the pet...................................................passed
+Then The pet is deleted.....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="This feature is to validate the basic API calls from petstore" name="Get pets by availability status from the petstore" time="1.731">
+        <system-out><![CDATA[Given User search for "available" pets......................................passed
+Then Pets are displayed.....................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
